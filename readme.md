@@ -1,76 +1,77 @@
-Environment Requirements
-1.	Web Server,Apache, Nginx
-2.	Database: Mysql 5*
-3.	Composer https://getcomposer.org/
-4.	Laravel 5.8 https://laravel.com
-5.	php 7.1.3
-6.	caffeinated/modules 5.2 https://github.com/caffeinated/modules
-7.	Spatie permission 2.37 https://github.com/spatie/laravel-permission
-8.	yajra/laravel-datatables-oracle ~9.0 https://github.com/yajra/laravel-datatables
-Setup
-•	clone repository https://github.com/{YOUR_USERNAME}/life-master-app-master.git
-•	composer install
-ENV File
-•	Generate new env
+# Support App
+Support App Section 1<br>
 
 
-APP_NAME=SupportApp
-APP_ENV=local
-APP_KEY=
-APP_DEBUG=true
-APP_URL=http://localhost
+## Environment Requirements
+- Web Server,Apache, Nginx<br>
+- Database: Mysql 5*<br>
+- Composer https://getcomposer.org/<br>
+- Laravel 5.7 https://laravel.com<br>
+- php 7.1.3 <br>
+- caffeinated/modules 5.2 https://github.com/caffeinated/modules<br>
+- Spatie permission 2.37 https://github.com/spatie/laravel-permission<br>
+- yajra/laravel-datatables-oracle ~9.0 https://github.com/yajra/laravel-datatables<br>
 
+#  Setup
+- clone repository https://github.com/{YOUR_USERNAME}/support-app.git<br>
+- composer install<br>
 
-LOG_CHANNEL=stack
+## ENV File
+- Generate new env<br><br><br>
+APP_NAME=SupportApp<br>
+APP_ENV=local<br>
+APP_KEY=<br>
+APP_DEBUG=true<br>
+APP_URL=http://localhost<br>
+<br><br>
+LOG_CHANNEL=stack<br>
+<br><br>
+DB_CONNECTION=mysql<br>
+DB_HOST=127.0.0.1<br>
+DB_PORT=3306<br>
+DB_DATABASE=database<br>
+DB_USERNAME=root<br>
+DB_PASSWORD=secrete<br>
+<br><br>
+BROADCAST_DRIVER=log<br>
+CACHE_DRIVER=file<br>
+QUEUE_CONNECTION=sync<br>
+SESSION_DRIVER=file<br>
+SESSION_LIFETIME=120<br>
+<br><br>
+REDIS_HOST=127.0.0.1<br>
+REDIS_PASSWORD=null<br>
+REDIS_PORT=6379<br>
+<br><br>
+MAIL_DRIVER=smtp<br>
+MAIL_HOST=smtp.gmail.com<br>
+MAIL_PORT=587<br>
+MAIL_USERNAME=example@gmail.com<br>
+MAIL_PASSWORD=xxxxxxx<br>
+MAIL_ENCRYPTION=tls<br>
 
+<br><br>
+AWS_ACCESS_KEY_ID=<br>
+AWS_SECRET_ACCESS_KEY=<br>
+AWS_DEFAULT_REGION=us-east-1<br>
+AWS_BUCKET=<br>
+<br><br>
+PUSHER_APP_ID=<br>
+PUSHER_APP_KEY=<br>
+PUSHER_APP_SECRET=<br>
+PUSHER_APP_CLUSTER=mt1<br>
+<br><br>
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"<br>
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"<br>
+<br><br>
+# Migrations
+- php artisan migrate<br>
+- php artisan db:seed --class=RoleTableSeeder<br>
 
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=database
-DB_USERNAME=root
-DB_PASSWORD=secrete
+# Installation 
+- php artisan install:super_admin <br>
 
-
-BROADCAST_DRIVER=log
-CACHE_DRIVER=file
-QUEUE_CONNECTION=sync
-SESSION_DRIVER=file
-SESSION_LIFETIME=120
-
-
-REDIS_HOST=127.0.0.1
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-
-
-MAIL_DRIVER=smtp
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=example@gmail.com
-MAIL_PASSWORD=xxxxxxx
-MAIL_ENCRYPTION=tls
-
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=us-east-1
-AWS_BUCKET=
-
-
-PUSHER_APP_ID=
-PUSHER_APP_KEY=
-PUSHER_APP_SECRET=
-PUSHER_APP_CLUSTER=mt1
-
-
-MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
-MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
-
-
-Migrations
-•	php artisan migrate
-•	php artisan db:seed --class=RoleTableSeeder
-Installation
-•	php artisan install:super_admin
-Contact
+# Contact
 thabo.tony@gmail.com
+
+
