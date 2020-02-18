@@ -66,7 +66,7 @@ MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"<br>
 <br><br>
 # Migrations
 - php artisan migrate<br>
-- php artisan db:seed --class=RoleTableSeeder<br>
+- php artisan db:seed <br>
 
 # Installation 
 - php artisan install:super_admin <br>
